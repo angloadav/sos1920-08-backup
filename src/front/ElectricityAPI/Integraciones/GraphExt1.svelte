@@ -2,7 +2,7 @@
     import Button from "sveltestrap/src/Button.svelte";
     import { pop } from "svelte-spa-router";
     var miAPI = "https://sos1920-08.herokuapp.com/api/v2/electricity-produced-stats";
-    var API2 = "http://api.eia.gov/series/?series_id=ELEC.GEN.ALL-AK-99.A&api_key=b9d1c54c56f964cf73b76ddb8f62f8fe&out=json";
+    var API2 = "https://api.eia.gov/series/?series_id=ELEC.GEN.ALL-AK-99.A&api_key=b9d1c54c56f964cf73b76ddb8f62f8fe&out=json";
 
 
     async function loadGraphGr9() {
