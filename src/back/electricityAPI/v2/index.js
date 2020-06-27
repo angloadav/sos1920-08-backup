@@ -1,4 +1,4 @@
-module.exports = function (app) {
+module.exports = function (app) { console.log("a");
 	const dataStore = require('nedb');
 	const  request = require("request");
 	const  express = require("express") ;
@@ -169,7 +169,7 @@ module.exports = function (app) {
 
 	// POST electricity-produced-stats
 	app.post(BASE_PATH + '/electricity-produced-stats', (req, res) => {
-		var newStat = req.body;
+		var newStat = req.body; console.log("E");
 		if (
 			newStat == {} ||
 			(newStat.country == null || newStat.country == '') ||
@@ -185,7 +185,7 @@ module.exports = function (app) {
 		} else {
 			db.insert(newStat);
 			res.sendStatus(201);
-		}
+		console.log("F")}
 	});
 
 	//DELETE electicity-produced-stats
